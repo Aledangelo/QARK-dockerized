@@ -15,11 +15,11 @@ To use this Docker environment, you must have Docker and Docker Compose installe
 1. **Download Java 8:**
    - Download java openjdk8 in tar.gz format from [here](https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=426&field_architecture_target_id=391&field_java_package_target_id=396).
 
-1. **Prepare the APK File:**
+2. **Prepare the APK File:**
    - Rename your Android APK file to `app.apk`.
    - Place `app.apk` into the `apk` folder located in the root of this repository.
 
-2. **Install Android SDK:**
+3. **Install Android SDK:**
    - Download the android SDK, you can get it under the 'command line tools': https://developer.android.com/studio/#downloads
    ```bash
    $ unzip commandlinetools-linux-11076708_latest.zip
@@ -38,14 +38,14 @@ To use this Docker environment, you must have Docker and Docker Compose installe
    ```
 
 
-2. **Build the Docker Image:**
+4. **Build the Docker Image:**
    ```bash
    $ docker-compose build
    ```
 
 ### Run the Environment
 
-3. **Run QARK:**
+5. **Run QARK:**
    ```bash
    $ docker-compose run qark
    ```
