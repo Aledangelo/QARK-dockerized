@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+    qark:
+        image: ale13/qark
+        container_name: qark
+        build: 
+            context: .
+        volumes:
+          - ./apk:/qark/apk
+          - ./report:/usr/local/lib/python2.7/site-packages/qark-4.0.0-py2.7.egg/qark/report/
+          - ./exploit:/qark/exploit
+        tty: true
+        stdin_open: true
